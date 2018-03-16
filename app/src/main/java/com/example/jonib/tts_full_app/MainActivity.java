@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ASRWithIntent.class));
                         break;
                     case 1:
-                        startActivity(new Intent(MainActivity.this, ASRWithIntent.class));
+                        startActivity(new Intent(MainActivity.this, ASRWithLib.class));
                         break;
                     case 2:
                         startActivity(new Intent(MainActivity.this, ASRWithIntent.class));

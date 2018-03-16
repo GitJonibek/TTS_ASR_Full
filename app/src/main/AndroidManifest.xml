@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jonib.tts_full_app">
 
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -18,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ASRWithIntent" />
-        <activity android:name=".ASRWithLib"></activity>
+        <activity android:name=".ASRWithIntent" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ASRWithLib" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
